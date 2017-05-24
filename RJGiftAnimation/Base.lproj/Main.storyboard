@@ -1,14 +1,18 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16C68" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="RJGiftAnimation" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,8 +20,66 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="X100" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kYm-H2-jpU" customClass="RJGiftDigitLabel" customModule="RJGiftAnimation" customModuleProvider="target">
+                                <rect key="frame" x="137.5" y="284" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="634-Ha-kiU"/>
+                                    <constraint firstAttribute="width" constant="100" id="MCc-qj-LDP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dR2-mi-4m8">
+                                <rect key="frame" x="26" y="598" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="FqS-Si-Vit"/>
+                                    <constraint firstAttribute="width" constant="46" id="tCf-zQ-seR"/>
+                                </constraints>
+                                <state key="normal" title="gift1"/>
+                                <connections>
+                                    <action selector="gift1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ntq-WM-D4A"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9eX-G7-W61">
+                                <rect key="frame" x="164.5" y="598" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="46" id="3C8-1L-zWL"/>
+                                    <constraint firstAttribute="height" constant="30" id="3hy-eK-go8"/>
+                                </constraints>
+                                <state key="normal" title="gift2"/>
+                                <connections>
+                                    <action selector="gift2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mJt-BA-BU1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YuE-Ie-lIQ">
+                                <rect key="frame" x="279" y="598" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="46" id="f0b-8y-6Ej"/>
+                                    <constraint firstAttribute="height" constant="30" id="mom-uw-vGh"/>
+                                </constraints>
+                                <state key="normal" title="gift3"/>
+                                <connections>
+                                    <action selector="gift3:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cxP-bQ-wsQ"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="YuE-Ie-lIQ" secondAttribute="trailing" constant="50" id="3LA-dT-0aC"/>
+                            <constraint firstItem="dR2-mi-4m8" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="26" id="55Y-91-eco"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="YuE-Ie-lIQ" secondAttribute="bottom" constant="39" id="5pW-eM-LAu"/>
+                            <constraint firstItem="kYm-H2-jpU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="700-mE-QK7"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="dR2-mi-4m8" secondAttribute="bottom" constant="39" id="KbU-Uu-VRo"/>
+                            <constraint firstItem="kYm-H2-jpU" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="nLz-jN-tFV"/>
+                            <constraint firstItem="9eX-G7-W61" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="one-Cx-mmR"/>
+                            <constraint firstItem="9eX-G7-W61" firstAttribute="bottom" secondItem="dR2-mi-4m8" secondAttribute="bottom" id="uag-h7-xnv"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="testLabel" destination="kYm-H2-jpU" id="Dha-iM-dbc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
