@@ -14,6 +14,7 @@
 		8BCC96C51ED523CD00C58C68 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BCC96C31ED523CD00C58C68 /* LaunchScreen.storyboard */; };
 		8BCC96D01ED523CE00C58C68 /* RJGiftAnimationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BCC96CF1ED523CE00C58C68 /* RJGiftAnimationTests.swift */; };
 		8BCC96DB1ED523CE00C58C68 /* RJGiftAnimationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BCC96DA1ED523CE00C58C68 /* RJGiftAnimationUITests.swift */; };
+		8BCC96EA1ED5243900C58C68 /* RJGiftDigitLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BCC96E91ED5243900C58C68 /* RJGiftDigitLabel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		8BCC96D61ED523CE00C58C68 /* RJGiftAnimationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RJGiftAnimationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BCC96DA1ED523CE00C58C68 /* RJGiftAnimationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RJGiftAnimationUITests.swift; sourceTree = "<group>"; };
 		8BCC96DC1ED523CE00C58C68 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8BCC96E91ED5243900C58C68 /* RJGiftDigitLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RJGiftDigitLabel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 		8BCC96B91ED523CD00C58C68 /* RJGiftAnimation */ = {
 			isa = PBXGroup;
 			children = (
+				8BCC96E81ED5241D00C58C68 /* RJGiftAnimation */,
 				8BCC96BA1ED523CD00C58C68 /* AppDelegate.swift */,
 				8BCC96BC1ED523CD00C58C68 /* ViewController.swift */,
 				8BCC96BE1ED523CD00C58C68 /* Main.storyboard */,
@@ -123,6 +126,14 @@
 				8BCC96DC1ED523CE00C58C68 /* Info.plist */,
 			);
 			path = RJGiftAnimationUITests;
+			sourceTree = "<group>";
+		};
+		8BCC96E81ED5241D00C58C68 /* RJGiftAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				8BCC96E91ED5243900C58C68 /* RJGiftDigitLabel.swift */,
+			);
+			path = RJGiftAnimation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,6 +272,7 @@
 			files = (
 				8BCC96BD1ED523CD00C58C68 /* ViewController.swift in Sources */,
 				8BCC96BB1ED523CD00C58C68 /* AppDelegate.swift in Sources */,
+				8BCC96EA1ED5243900C58C68 /* RJGiftDigitLabel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
